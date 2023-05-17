@@ -13,8 +13,8 @@ from .datasets.celeba                   import CelebaDataset
 from .datasets.image_domain_folder      import ImageDomainFolder
 from .datasets.image_domain_hierarchy   import ImageDomainHierarchy
 from .datasets.ndarray_domain_hierarchy import NDArrayDomainHierarchy
-from .datasets.zipper                   import DatasetZipper
 from .datasets.custom_dataset           import custom_dataset
+from .datasets.zipper                   import DatasetZipper
 
 from .loader_zipper import DataLoaderZipper
 from .transforms    import select_transform

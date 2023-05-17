@@ -23,7 +23,7 @@ def custom_dataset(dataset,
     dataset_path = Path(dataset).parents[0]
     dataset_pkg = Path(dataset).stem
 
-    sys.path.append(dataset_path)
+    sys.path.append(str(dataset_path))
     mod = import_module(dataset_pkg)
 
     return mod.Dataset(path, domain, split=split, **kwargs)
